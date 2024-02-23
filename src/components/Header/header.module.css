@@ -1,0 +1,77 @@
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logoTitle {
+    margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center; /* ナビゲーションリンクを垂直中央に配置 */
+  }
+  
+  .navLink {
+    display: inline-block; /* リンクにブロックレベルの特性を持たせ、高さを設定可能に */
+    margin: 0 15px;
+    padding: 20px 10px; /* 上下のパディングを増やしてヘッダーの高さに合わせる */
+    text-decoration: none;
+    color: #333;
+    font-size: 16pt;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: '源ノ角ゴシック JP', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navLink:hover,
+  .navLink:focus {
+    background-color: rgba(0, 0, 0, 0.2); /* ホバー時の背景色 */
+    color: #007acc; /* ホバー時のテキスト色 */
+  }
+
+/* モバイルデバイス向けの基本スタイル */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .logo {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .logoTitle {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navLink {
+    padding: 10px;
+    margin: 5px 0; /* モバイルデバイスではリンク間のスペースを減らす */
+    font-size: 14pt; /* モバイルデバイスではフォントサイズを少し小さくする */
+  }
+}

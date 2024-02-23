@@ -1,0 +1,14 @@
+.cardContainer {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    
+}
+
+/* モバイルデバイス向けのスタイル調整 */
+@media (max-width: 768px) {
+    .cardContainer {
+      flex-direction: column; /* フレックスアイテムを縦方向に並べる */
+      align-items: center; /* アイテムを中央揃えにする */
+    }
+  }

@@ -1,0 +1,64 @@
+.videoBackground {
+    position: relative;
+    width: 98%;
+    height: 50vh;
+    margin: 5vh auto;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .videoBackground:hover {
+    transform: scale(1.01);
+  }
+  
+  .videoBackground::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+  
+  .contentOverlay {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .contentOverlay h2,
+  .contentOverlay p {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    line-height: 1.6;
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  .contentOverlay h2 {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
