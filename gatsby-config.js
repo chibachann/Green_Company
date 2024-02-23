@@ -6,5 +6,10 @@ module.exports = {
     title: `demo`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
+    // 他のプラグイン設定
+  ],
 }
