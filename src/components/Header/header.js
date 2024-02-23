@@ -16,7 +16,7 @@ const Header = () => (
       <h1 className={styles.logoTitle}>Green Company</h1> 
     </div>
     <nav className={styles.nav}> 
-      <Link className={styles.navLink} to="/">ホーム</Link> {/* Use style.navLink */}
+      <Link className={styles.navLink} to="/">いえ</Link> {/* Use style.navLink */}
       <Link className={styles.navLink} to="/services">事業内容</Link> {/* Use style.navLink */}
       <Link className={styles.navLink} to="/about">企業説明</Link> {/* Use style.navLink */}
       <Link className={styles.navLink} to="/contact">お問い合わせ</Link> {/* Use style.navLink */}

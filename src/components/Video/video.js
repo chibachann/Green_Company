@@ -14,7 +14,6 @@ const VideoBackground = ({ title, children }) => (
       className={styles.video}
     />
     <div className={styles.contentOverlay}>
-      <h2>{title}</h2>
       {children}
     </div>
   </div>
