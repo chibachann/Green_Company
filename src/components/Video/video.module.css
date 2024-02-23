@@ -37,7 +37,7 @@
   }
   
   .contentOverlay {
-    position: absolute; /* 絶対配置に変更 */
+    position: relative;
     top: 0; /* 要素をコンテナの上部に合わせる */
     left: 0; /* 要素をコンテナの左部に合わせる */
     width: 100%; /* コンテナ全体に広がるように */
